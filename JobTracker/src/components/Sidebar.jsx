@@ -3,7 +3,7 @@ import { Calendar, FileText, Kanban, ChartLine } from 'lucide-react'
 
 const Sidebar = (props) => {
   return (
-    <div className="w-[250px] border-r border-[#51515163] bg-[#0d1116] flex flex-col justify-between">
+    <div className="w-[250px] h-screen  border-r border-[#51515163] bg-[#0d1116] flex flex-col justify-between">
       <div>
         <div className="p-5 flex gap-3">
           <div className="h-8 w-8 rounded-xl bg-[#8b2fc9] flex justify-center items-center">

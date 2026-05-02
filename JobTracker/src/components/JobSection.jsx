@@ -1,6 +1,7 @@
 import { IndianRupee, MapPin, CalendarDays } from 'lucide-react'
 
 const JobSection = (props) => {
+
   return (
     <div className='flex flex-wrap gap-5'>
 
@@ -12,8 +13,8 @@ const JobSection = (props) => {
           <div className="flex justify-between">
             <div className="flex gap-4">
               
-              <div className="h-12 w-12 rounded-xl bg-[#1c2330] flex items-center justify-center font-bold">
-                {job.logo}
+              <div className="h-12 w-12 rounded-xl bg-[#1c2330] flex items-center justify-center font-medium text-xl">
+                {job.companyname.charAt(0).toUpperCase()}
               </div>
 
               <div>
@@ -21,13 +22,13 @@ const JobSection = (props) => {
                 <p className="text-sm text-gray-400">{job.post}</p>
 
                 <div className="flex gap-1 mt-2 text-xs text-gray-500">
-                  <MapPin size={17} />
+                  <MapPin size={17} color='#ffff' />
                   <span>{job.location}</span>
 
-                  <CalendarDays size={17} />
+                  <CalendarDays size={17} color='#ffff' />
                   <span>{job.Date}</span>
 
-                  <IndianRupee size={17} />
+                  <IndianRupee size={17} color='#ffff'/>
                   <span>{job.Salary}K</span>
                 </div>
               </div>
@@ -39,10 +40,10 @@ const JobSection = (props) => {
           </div>
 
           <div className="flex justify-end gap-3 mt-6">
-            <button className="px-4 py-1.5 rounded-lg bg-[#2a2f3a] text-sm">
+            <button className="px-4 py-1.5 rounded-lg bg-[#2a2f3a] text-sm active:scale-95">
               Edit
             </button>
-            <button className="px-4 py-1.5 rounded-lg bg-red-500/10 text-red-400 text-sm">
+            <button className="px-4 py-1.5 rounded-lg bg-red-500/10 text-red-400 text-sm active:scale-95">
               Remove
             </button>
           </div>
