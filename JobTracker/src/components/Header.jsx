@@ -4,11 +4,11 @@ import { Search, Plus } from 'lucide-react'
 const Header = ({ onAddClick },props) => {
   console.log(props)
     return (
-    <div className="h-[100px] border-b border-[#3f3f3f8d] flex justify-between bg-[#0f0f0f62]">
+    <div className="h-[100px] fixed top-0 left-[250px] right-0 border-b border-[#3f3f3f8d] flex justify-between bg-[#0f0f0f62] z-10">
       
   
       <div className="p-4 text-[#fdfdfd]">
-        <p className="text-2xl p-1 ml-2 font-bold">Applications</p>
+        <p className="text-3xl p-1 ml-3 mt-3 font-medium">Applications</p>
         <p className="text-xs ml-3 text-[#9c9c9cd4]">
           
         </p>

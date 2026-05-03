@@ -29,7 +29,7 @@ const JobSection = (props) => {
                   <span>{job.Date}</span>
 
                   <IndianRupee size={17} color='#ffff'/>
-                  <span>{job.Salary}K</span>
+                  <span>{job.Salary}</span>
                 </div>
               </div>
             </div>
