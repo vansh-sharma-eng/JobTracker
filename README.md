@@ -18,4 +18,3 @@ A simple app to track job applications and their status.
 npm install
 npm run dev
 ```
-
